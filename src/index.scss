@@ -1,0 +1,12 @@
+@charset "utf-8";
+@import './scss/reset.scss';
+@import './scss/variables.scss';
+@import './scss/master.scss';
+
+@media (max-width: #{$pcrwd-breakpoint + 'px'}) {
+  @import './scss/master-pc_mid';
+}
+
+@media (max-width: #{$mblrwd-breakpoint + 'px'}) {
+  @import './scss/master-mobile.scss';
+}

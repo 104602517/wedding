@@ -1,0 +1,87 @@
+@mixin slideUpAnimation($name, $distance, $opacity: 1) {
+  @keyframes #{$name} {
+    from {
+      opacity: 0;
+      transform: translateY($distance);
+    }
+    to {
+      opacity: $opacity;
+      transform: translateY(0px);
+    }
+  }
+
+  animation: #{$name} 0.75s forwards ease-in-out;
+}
+
+@mixin slideLeftAnimation($name, $distance) {
+  @keyframes #{$name} {
+    from {
+      opacity: 0;
+      transform: translateX($distance);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+
+  animation: #{$name} 0.65s forwards ease-in-out;
+}
+
+@mixin slideRightAnimation($name, $distance) {
+  @keyframes #{$name} {
+    from {
+      opacity: 0;
+      transform: translateX(-$distance);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+
+  animation: #{$name} 0.65s forwards ease-in-out;
+}
+
+@keyframes scaleUp {
+  from {
+    opacity: 0;
+    scale: 0;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+@keyframes shake {
+  0% {
+    transform: rotateY(12deg) translate(-50%, -50%);
+  }
+  20% {
+    transform: rotateY(-7deg) translate(-50%, -50%);
+  }
+  40% {
+    transform: rotateY(0deg) translate(-50%, -50%);
+  }
+}
+
+@keyframes modalShow {
+  from {
+    opacity: 0;
+    scale: 0;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+@keyframes rotateAndFly {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
