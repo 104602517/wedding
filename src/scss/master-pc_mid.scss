@@ -64,6 +64,27 @@
 }
 
 .main {
+
+  .pointer {
+    width: vw(100px);
+    height: vw(100px);
+    transform: translateX(calc(-50% + vw(100px))) rotate(-70deg);
+    top: vw(-5px);
+  }
+
+  .pointer-text {
+    width: vw(190px);
+    height: vw(190px);
+    top: vw(-75px);
+    transform: translateX(calc(-50% - vw(25px)));
+  }
+
+  .jump-rabbit {
+    bottom: vw(-15px);
+    width: vw(280px);
+    height: vw(280px);
+  }
+
   .name-search-box {
     top: vw(140px);
   }
@@ -86,6 +107,14 @@
     right: (-15px);
     left: unset;
   }
+}
+
+
+.background-car {
+  width: vw(500px);
+  height: vw(500px);
+  left: vw(-100px);
+  bottom: vw(-100px);
 }
 
 .about-us {

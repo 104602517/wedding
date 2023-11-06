@@ -196,10 +196,34 @@
 
 .main {
 
+  .jump-rabbit {
+    bottom: vwm(-15px);
+    width: vwm(180px);
+    height: vwm(180px);
+  }
+
   .table-pic {
     width: vwm(283px);
     height: vwm(366px);
     border-radius: vwm(16px);
+  }
+
+  .pointer {
+    z-index: 10;
+    width: vwm(100px);
+    height: vwm(100px);
+    transform: translateX(calc(-50% - vwm(10px))) rotate(-10deg);
+    top: vwm(-125px);
+    pointer-events: none;
+  }
+
+  .pointer-text {
+    z-index: 10;
+    width: vwm(190px);
+    height: vwm(190px);
+    top: vwm(-255px);
+    transform: translateX(calc(-50% - vwm(25px))) rotate(-20deg);
+    pointer-events: none;
   }
 
   .name-search-box {
@@ -265,6 +289,8 @@
 
   .groom, .bride {
     margin-bottom: vwm(100px);
+    display: flex;
+    flex-direction: column;
   }
 
   .avatar {
@@ -275,12 +301,18 @@
   }
 
   .intro {
-    border: 5px solid blue;
-    border-radius: 10px;
-    background: red;
     font-size: vwm(16px);
     padding: vwm(25px) 0;
+    text-align: justify;
   }
+}
+
+
+.background-car {
+  width: vwm(200px);
+  height: vwm(200px);
+  left: vwm(-80px);
+  bottom: vwm(550px);
 }
 
 .where {

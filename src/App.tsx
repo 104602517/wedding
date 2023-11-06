@@ -3,7 +3,7 @@ import { Route, useLocation } from 'react-router-dom'
 import NameSearchIndex from './components/NameSearch'
 import AboutUsIndex from './components/AboutUs'
 import { CSSTransition } from "react-transition-group";
-import { useCallback, useRef, useContext } from 'react';
+import { useCallback, useRef, useContext, useEffect } from 'react';
 import WhereIndex from './components/Where';
 import Modal from './components/Modal'
 import { StoreContext } from './context/index'
@@ -31,13 +31,21 @@ function App() {
   );
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const routeRefs: any = useRef(null)
-  const { isShowModal } = useContext(StoreContext)
-  
+  const { isShowModal, setIsMainRef } = useContext(StoreContext)
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const mainRef = useRef<any>(null)
+
+  useEffect(() => {
+    if (mainRef) {
+      setIsMainRef(mainRef)
+    }
+  }, [mainRef, setIsMainRef])
+
   return (
       <>
         <Nav/>
         { isShowModal && <Modal/>}
-        <main className='main'>
+        <main className='main' ref={mainRef}>
           {appRoutes.map(({ path, Component }, index) => {
           return (
             <Route key={index} exact path={path}>

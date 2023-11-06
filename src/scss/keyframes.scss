@@ -103,3 +103,46 @@
     scale: (1.55);
   }
 }
+
+@keyframes jumpRight {
+  from {
+    transform: translateX(-20vw);
+  } to {
+    transform: translateX(100vw);
+  }
+}
+
+@keyframes drive {
+  0% {
+    opacity: 0;
+    transform: translateX(0);
+  }
+  10% {
+    opacity: 1;
+    transform: translateX(10vw);
+  }
+  13% {
+    transform: translateX(10vw) rotate(-90deg);
+  }
+  30% {
+    transform: translateY(-20vw) translateX(10vw) rotate(-90deg);
+  }
+  33% {
+    transform: translateY(-20vw) translateX(20vw) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-20vw) translateX(45vw) rotate(0deg);
+  }
+  53% {
+    transform: translateY(-20vw) translateX(45vw) rotate(90deg);
+  }
+  70% {
+    transform: translateY(0vw) translateX(45vw) rotate(90deg);
+  }
+  73% {
+    transform: translateY(0vw) translateX(45vw) rotate(0deg);
+  }
+  100% {
+    transform: translateY(0vw) translateX(100vw) rotate(0deg);
+  }
+}

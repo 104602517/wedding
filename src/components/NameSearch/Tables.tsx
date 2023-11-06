@@ -13,6 +13,8 @@ const Tables:React.FC = () => {
   return (
     <>
       <div className="tables">
+        <div className="pointer"></div>
+        <div className="pointer-text"></div>
         <img onClick={showPic} className="table-pic" src="/src/assets/Table.jpg"/>
       </div>
     </>
