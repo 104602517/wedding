@@ -2,6 +2,7 @@ import { StoreContext } from "../../context/index"
 import { useContext } from "react"
 import Lottie from 'react-lottie-player';
 import * as fatRabbit from '../../assets/animation_lo18ehwf.json'
+import Table from '../../assets/Table.jpg'
 
 const Modal:React.FC = () => {
   const store = useContext(StoreContext)
@@ -22,7 +23,7 @@ const Modal:React.FC = () => {
         play
         animationData={fatRabbit}/>
       {
-        isPicture && <img className="big-table" src="/src/assets/Table.jpg"/>
+        isPicture && <img className="big-table" src={Table}/>
       }
       {
         !isPicture &&

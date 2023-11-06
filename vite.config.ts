@@ -9,7 +9,7 @@ export default defineConfig({
     },
   },
   plugins: [react()],
-  base: '/wedding/',
+  base: '/wedding',
   optimizeDeps: {
     exclude: ['js-big-decimal']
   }

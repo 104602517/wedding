@@ -1,5 +1,6 @@
 import { useContext } from "react"
 import { StoreContext } from "../../context"
+import Table from '../../assets/Table.jpg'
 
 const Tables:React.FC = () => {
   const store = useContext(StoreContext)
@@ -15,7 +16,7 @@ const Tables:React.FC = () => {
       <div className="tables">
         <div className="pointer"></div>
         <div className="pointer-text"></div>
-        <img onClick={showPic} className="table-pic" src="/src/assets/Table.jpg"/>
+        <img onClick={showPic} className="table-pic" src={Table}/>
       </div>
     </>
   )

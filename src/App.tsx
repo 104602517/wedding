@@ -19,12 +19,13 @@ function App() {
   const location = useLocation();
 
   const appRoutes: AppRoute[] = [
-    { path: "/", title: "我坐哪裡?", Component: NameSearchIndex },
+    { path: "/wedding", title: "我坐哪裡?", Component: NameSearchIndex },
     { path: "/about-us", title: "我們是誰?", Component: AboutUsIndex },
     { path: "/where", title: "這是哪裡?", Component: WhereIndex }
   ];
   const isMatch = useCallback(
     (path: string): boolean => {
+      console.log(location.pathname)
       return location.pathname === path ? true : false;
     },
     [location]
