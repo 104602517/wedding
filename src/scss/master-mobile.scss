@@ -2,11 +2,13 @@
 @import './variables.scss';
 
 .main {
+  overflow: scroll;
   position: fixed;
   left: 50%;
   top: 0;
   transform: translateX(-50%);
-  height: calc(fill-available - vwm(220px));
+  height: calc(100vh - vwm(80px));
+  max-height: -webkit-fill-available;
   margin: vwm(40px) auto;
 }
 

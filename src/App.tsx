@@ -36,7 +36,6 @@ function App() {
   const { isShowModal, setIsMainRef } = useContext(StoreContext)
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const mainRef = useRef<any>(null)
-
   useEffect(() => {
     if (mainRef) {
       setIsMainRef(mainRef)
