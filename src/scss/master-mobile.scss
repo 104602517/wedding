@@ -2,13 +2,12 @@
 @import './variables.scss';
 
 .main {
-  overflow: scroll;
   position: fixed;
   left: 50%;
   top: 0;
   transform: translateX(-50%);
   height: calc(100vh - vwm(80px));
-  max-height: -webkit-fill-available;
+  // max-height: -webkit-fill-available;
   margin: vwm(40px) auto;
 }
 
@@ -203,7 +202,7 @@
 .main {
 
   .jump-rabbit {
-    bottom: vwm(-15px);
+    bottom: vwm(-30px);
     width: vwm(180px);
     height: vwm(180px);
   }
@@ -294,7 +293,7 @@
   margin-top: vwm(50px);
 
   .groom, .bride {
-    margin-bottom: vwm(100px);
+    margin-bottom: vwm(70px);
     display: flex;
     flex-direction: column;
   }
@@ -324,3 +323,10 @@
 .where {
   margin-top: vwm(50px);
 }
+
+
+@media not all and (min-resolution:.001dpcm){ @supports (-webkit-appearance:none) { 
+  .main {
+    height: calc(100vh - vwm(220px));
+  }
+}}
