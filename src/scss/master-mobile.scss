@@ -2,6 +2,10 @@
 @import './variables.scss';
 
 .main {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   height: calc(100vh - vwm(220px));
   margin: vwm(40px) auto;
 }
