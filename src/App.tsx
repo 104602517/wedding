@@ -19,7 +19,7 @@ function App() {
   const location = useLocation();
 
   const appRoutes: AppRoute[] = [
-    { path: "/wedding", title: "我坐哪裡?", Component: NameSearchIndex },
+    { path: "/", title: "我坐哪裡?", Component: NameSearchIndex },
     { path: "/about-us", title: "我們是誰?", Component: AboutUsIndex },
     { path: "/where", title: "這是哪裡?", Component: WhereIndex }
   ];
