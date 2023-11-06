@@ -26,7 +26,7 @@ function App() {
   const isMatch = useCallback(
     (path: string): boolean => {
       console.log(location.pathname)
-      if (location.pathname === '/wedding') location.pathname = '/'
+      if (location.pathname === '/wedding' || location.pathname === '/wedding/') location.pathname = '/'
       return location.pathname === path ? true : false;
     },
     [location]
