@@ -27,7 +27,7 @@ const NameSearch: React.FC = () => {
           placeholder="請輸入您的尊姓大名"
           onChange={ev => setName(ev.target.value)}
           />
-        <div className="name-search-btn" onClick={onSearch}>查詢桌次</div>
+        <div className="name-search-btn" onClick={onSearch}></div>
       </div>
     </>
   )

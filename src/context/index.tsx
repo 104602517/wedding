@@ -10,6 +10,8 @@ type ContextType = {
   searchPerson: (name: string) => Person | undefined,
   currentPerson: any,
   setCurrentPerson: any,
+  isPicture: boolean,
+  setIsPicture: any,
 }
 
 const searchPerson = (name: string) => (
@@ -24,12 +26,15 @@ const StoreContext = createContext<ContextType>({
   setIsShowModal: () => {},
   searchPerson,
   currentPerson: '',
-  setCurrentPerson: () => {}
+  setCurrentPerson: () => {},
+  isPicture: false,
+  setIsPicture: () => {},
 });
 
 const StoreProvider = (props: React.PropsWithChildren) => {
   const [isShowModal, setIsShowModal] = useState(false)
   const [currentPerson, setCurrentPerson] = useState('')
+  const [isPicture, setIsPicture] = useState(false)
 
   return(
     <StoreContext.Provider value={{
@@ -38,6 +43,8 @@ const StoreProvider = (props: React.PropsWithChildren) => {
       searchPerson,
       currentPerson,
       setCurrentPerson,
+      isPicture,
+      setIsPicture,
       }}>
       {props.children}
     </StoreContext.Provider>

@@ -1,2 +1,140 @@
-@import './keyframes.scss';
 @import './variables.scss';
+
+.modal-layer {
+  .fat-rabbit {
+    width: vw(160px);
+    height: vw(160px);
+  }
+
+  .content-box {
+    p {
+      margin-bottom: vw(20px);
+    }
+
+    .name {
+      font-size: vw(35px);
+      margin-top: vw(30px);
+    }
+
+    .seet-at {
+      font-size: vw(25px);
+    }
+
+    .seat {
+      font-size: vw(45px);
+    }
+
+    .plus-one {
+      font-size: vw(30px);
+    }
+
+    .time {
+      font-size: vw(25px);
+    }
+
+    .invite {
+      font-size: vw(30px);
+    }
+  }
+
+  .modal-box,
+  .modal-small-box {
+    width: vw(700px);
+    height: vw(700px);
+
+    .modal-small-box {
+      width: vw(660px);
+      height: vw(660px);
+
+      .left-ear, .right-ear {
+        width: vw(60px);
+        height: vw(70px);
+        top: vw(35px);
+        left: vw(75px);
+      }
+
+      .right-ear {
+        width: vw(50px);
+        height: vw(60px);
+        top: vw(30px);
+        right: vw(40px);
+      }
+    }
+  }
+}
+
+.main {
+  .name-search-box {
+    top: vw(140px);
+  }
+
+  .background-flower,
+  .background-flower-2,
+  .background-flower-3 {
+    width: vw(700px);
+    height: vw(315px) !important;
+    left: vw(-15px);
+    bottom: vw(172px);
+  }
+
+  .background-flower-2 {
+    opacity: 0;
+    left: vw(570px);
+  }
+
+  .background-flower-3 {
+    right: (-15px);
+    left: unset;
+  }
+}
+
+.about-us {
+  margin-top: vw(50px);
+
+  .groom, .bride {
+    margin-bottom: vw(100px);
+  }
+
+  .avatar {
+    flex: 1 0 vw(100px);
+    width: vw(100px);
+    height: vw(100px);
+    margin-right: vw(50px);
+  }
+
+  .intro {
+    font-size: vw(16px);
+    padding: vw(25px) 0;
+  }
+}
+
+.where {
+  margin-top: vw(50px);
+}
+
+@media (max-width: 1150px) {
+  .main {
+    .name-search-box {
+      flex: 0 0 40% !important;
+    }
+  
+    .tables {
+      flex: 0 0 35% !important;
+    }
+
+    .background-flower-2,
+    .background-flower-3 {
+      opacity: 1;
+    }
+  }
+}
+
+@media (max-height: 975px) {
+  .main {
+    .name-search-box {
+      .where-i-seet {
+        top: vw(105px);
+      }
+    }
+  }
+}

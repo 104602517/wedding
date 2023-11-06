@@ -1,9 +1,23 @@
-const Tables:React.FC = () => (
-  <>
-    <div className="tables">
-      <img className="table-pic" src="https://live.staticflickr.com/135/318543494_9b5b87b258_b.jpg"/>
-    </div>
-  </>
-)
+import { useContext } from "react"
+import { StoreContext } from "../../context"
+
+const Tables:React.FC = () => {
+  const store = useContext(StoreContext)
+  const { setIsShowModal, setIsPicture } = store
+
+  const showPic = () => {
+    setIsShowModal(true)
+    setIsPicture(true)
+  }
+
+  return (
+    <>
+      <div className="tables">
+        <img onClick={showPic} className="table-pic" src="/src/assets/Table.jpg"/>
+      </div>
+    </>
+  )
+  
+}
 
 export default Tables

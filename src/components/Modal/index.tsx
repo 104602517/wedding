@@ -5,10 +5,11 @@ import * as fatRabbit from '../../assets/animation_lo18ehwf.json'
 
 const Modal:React.FC = () => {
   const store = useContext(StoreContext)
-  const { setIsShowModal, currentPerson } = store
+  const { setIsShowModal, currentPerson, isPicture, setIsPicture } = store
   const closeModal = (ev: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
     if(ev.target instanceof Element && ev.target.className === 'modal-layer') {
       setIsShowModal(false)
+      setIsPicture(false)
     }
   }
 
@@ -21,12 +22,16 @@ const Modal:React.FC = () => {
         play
         animationData={fatRabbit}/>
       {
+        isPicture && <img className="big-table" src="/src/assets/Table.jpg"/>
+      }
+      {
+        !isPicture &&
         currentPerson.name &&
         currentPerson.name.length &&
         <div className="content-box">
           <p className="name">親愛的{currentPerson.name}您好</p>
           <p className="seet-at">您的座位位於</p>
-          <p className="seat">{currentPerson.table}</p>
+          <p className="seat" style={{fontFamily: 'fantasy'}}>{currentPerson.table}</p>
           { !!currentPerson.plusOne && <p className="plus-one">您預計會攜帶 {currentPerson.plusOne} 位貴賓</p> }
           { !currentPerson.plusOne && <p className="plus-one">您<span style={{color: 'red'}}>未</span>有攜帶貴賓</p> }
           { currentPerson.isWedding && <p className="time">將於 15:45 參加證婚</p>}
@@ -35,6 +40,7 @@ const Modal:React.FC = () => {
         </div>
       }
       {
+        !isPicture &&
         (!currentPerson.name ||
         !currentPerson.name.length) &&
         <div className="content-box">
@@ -45,9 +51,12 @@ const Modal:React.FC = () => {
           <p className="seet-at">請立刻與我們聯絡，抱歉！</p>
         </div>
       }
-      <div className="modal-box">
-        <div className="modal-small-box"></div>
-      </div>
+      {!isPicture && <div className="modal-box">
+        <div className="modal-small-box">
+          <div className="left-ear"></div>
+          <div className="right-ear"></div>
+        </div>
+      </div>}
     </div>
   )
 }
