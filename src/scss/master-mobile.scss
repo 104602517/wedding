@@ -6,7 +6,7 @@
   left: 50%;
   top: 0;
   transform: translateX(-50%);
-  height: calc(100vh - vwm(220px));
+  height: calc(fill-available - vwm(220px));
   margin: vwm(40px) auto;
 }
 
