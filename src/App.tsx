@@ -17,17 +17,9 @@ interface AppRoute {
 
 function App() {
   const location = useLocation();
-  const isWebview = () => {
-    const useragent = navigator.userAgent;
-    // eslint-disable-next-line no-useless-escape
-    const rules = ['WebView','(iPhone|iPod|iPad)(?!.*Safari\/)','Android.*(wv|\.0\.0\.0)'];
-    const regex = new RegExp(`(${rules.join('|')})`, 'ig');
-    return Boolean(useragent.match(regex));
-  }
+  const useragent = navigator.userAgent;
 
-  if (isWebview()) {
-    alert('webview')
-  }
+  alert(useragent)
 
   const appRoutes: AppRoute[] = [
     { path: "/wedding", title: "我坐哪裡?", Component: NameSearchIndex },
