@@ -29,6 +29,7 @@ function App() {
     ) {
       alert(123)
     }
+    alert(useragent)
 // Line
 // Instagram
 //messenger
