@@ -55,7 +55,7 @@ html {
     font-family: serif;
     z-index: 1005;
     position: fixed;
-    top: 64%;
+    top: 550px;
     left: 50%;
     transform: translate(-50%, -50%);
 
@@ -100,7 +100,7 @@ html {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    transform-origin: 20% center;
+    transform-origin: center center;
     z-index: 1000;
   }
 

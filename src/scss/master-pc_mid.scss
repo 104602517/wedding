@@ -6,7 +6,17 @@
     height: vw(160px);
   }
 
+  .close {
+    top: vw(550px);
+    right: vw(550px);
+    width: vw(50px);
+    height: vw(50px);
+  }
+
   .content-box {
+    top: 50%;
+    left: 50%;
+    transform: translateY(calc(-50% + vw(150px))) translateX(-50%);
     p {
       margin-bottom: vw(20px);
     }

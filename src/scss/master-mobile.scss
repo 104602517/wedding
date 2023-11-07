@@ -71,6 +71,13 @@
   }
 }
 
+.close {
+  top: vw(150px);
+  right: vw(550px);
+  width: vw(50px);
+  height: vw(50px);
+}
+
 .collapse-open {
   .toggle {
     display: block;
@@ -146,11 +153,21 @@
     height: vwm(160px);
   }
 
+  .close {
+    top: vwm(150px);
+    right: vwm(150px);
+    width: vwm(50px);
+    height: vwm(50px);
+  }
+
   .big-table {
-    height: 55%;
+    height: 44%;
   }
 
   .content-box {
+    top: 50%;
+    left: 50%;
+    transform: translateY(calc(-50% + vwm(120px))) translateX(-50%);
     p {
       margin-bottom: vwm(20px);
     }
@@ -225,7 +242,7 @@
     z-index: 10;
     width: vwm(100px);
     height: vwm(100px);
-    transform: translateX(calc(-50% - vwm(100px))) rotate(90deg);
+    transform: translateX(calc(-50% - vwm(100px))) rotate(151deg) rotateX(155deg);
     top: vwm(150px);
     pointer-events: none;
   }
@@ -298,10 +315,10 @@
 }
 
 .about-us {
-  margin-top: vwm(50px);
+  margin-top: vwm(60px);
 
   .groom, .bride {
-    margin-bottom: vwm(70px);
+    margin-bottom: vwm(50px);
     display: flex;
     flex-direction: column;
   }
