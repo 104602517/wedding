@@ -17,9 +17,25 @@ interface AppRoute {
 
 function App() {
   const location = useLocation();
-  const useragent = navigator.userAgent;
-
-  alert(useragent)
+  const useragent = navigator.userAgent.toLowerCase()
+  if (
+      useragent.includes('line') || 
+      useragent.includes('instagram') ||
+      useragent.includes('messenger') ||
+      useragent.includes('facebook') ||
+      useragent.includes('fb') ||
+      useragent.includes('fban') ||
+      useragent.includes('fbav') 
+    ) {
+      alert(123)
+    }
+// Line
+// Instagram
+//messenger
+// facebook
+// fb
+// FBAN / FBAV
+  
 
   const appRoutes: AppRoute[] = [
     { path: "/wedding", title: "我坐哪裡?", Component: NameSearchIndex },
