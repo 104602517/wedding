@@ -6,9 +6,13 @@
   left: 50%;
   top: 0;
   transform: translateX(-50%);
-  height: calc(100vh - vwm(80px));
+  height: calc(100vh - vwm(220px));
   // max-height: -webkit-fill-available;
   margin: vwm(40px) auto;
+}
+
+.main.webview {
+  height: calc(100vh - vwm(220px)) !important;
 }
 
 .collapse-hide {

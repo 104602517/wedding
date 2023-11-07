@@ -18,18 +18,13 @@ interface AppRoute {
 function App() {
   const location = useLocation();
   const useragent = navigator.userAgent.toLowerCase()
-  if (
-      useragent.includes('line') || 
-      useragent.includes('instagram') ||
-      useragent.includes('messenger') ||
-      useragent.includes('facebook') ||
-      useragent.includes('fb') ||
-      useragent.includes('fban') ||
-      useragent.includes('fbav') 
-    ) {
-      alert(123)
-    }
-    alert(useragent)
+  const isWebView = useragent.includes('line') || 
+                    useragent.includes('instagram') ||
+                    useragent.includes('messenger') ||
+                    useragent.includes('facebook') ||
+                    useragent.includes('fban') ||
+                    useragent.includes('fbav') 
+
 // Line
 // Instagram
 //messenger
@@ -64,10 +59,10 @@ function App() {
 
   return (
       <>
-        {useragent}
+
         <Nav/>
         { isShowModal && <Modal/>}
-        <main className='main' ref={mainRef}>
+        <main className={`main ${isWebView ? 'webview' : null}`} ref={mainRef}>
           {appRoutes.map(({ path, Component }, index) => {
           return (
             <Route key={index} exact path={path}>
