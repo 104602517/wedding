@@ -17,6 +17,7 @@ interface AppRoute {
 
 function App() {
   const location = useLocation();
+  const standalone = window.navigator.standalone
 
   const appRoutes: AppRoute[] = [
     { path: "/wedding", title: "我坐哪裡?", Component: NameSearchIndex },
@@ -25,7 +26,6 @@ function App() {
   ];
   const isMatch = useCallback(
     (path: string): boolean => {
-      console.log(location.pathname)
       if (location.pathname === '/wedding/') location.pathname = '/wedding'
       return location.pathname === path ? true : false;
     },
@@ -36,11 +36,16 @@ function App() {
   const { isShowModal, setIsMainRef } = useContext(StoreContext)
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const mainRef = useRef<any>(null)
+
   useEffect(() => {
     if (mainRef) {
       setIsMainRef(mainRef)
     }
   }, [mainRef, setIsMainRef])
+
+  useEffect(() => {
+    alert(standalone)
+  }, [standalone])
 
   return (
       <>
