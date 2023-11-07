@@ -64,6 +64,7 @@ function App() {
 
   return (
       <>
+        {useragent}
         <Nav/>
         { isShowModal && <Modal/>}
         <main className='main' ref={mainRef}>
