@@ -71,13 +71,6 @@
   }
 }
 
-.close {
-  top: vw(150px);
-  right: vw(550px);
-  width: vw(50px);
-  height: vw(50px);
-}
-
 .collapse-open {
   .toggle {
     display: block;
@@ -148,14 +141,14 @@
 }
 
 .modal-layer {
-  .fat-rabbit {
-    width: vwm(160px);
-    height: vwm(160px);
-  }
+  // .fat-rabbit {
+  //   width: vwm(160px);
+  //   height: vwm(160px);
+  // }
 
   .close {
-    top: vwm(150px);
-    right: vwm(150px);
+    top: vwm(180px);
+    right: vwm(60px);
     width: vwm(50px);
     height: vwm(50px);
   }
@@ -169,39 +162,43 @@
     left: 50%;
     transform: translateY(calc(-50% + vwm(120px))) translateX(-50%);
     p {
-      margin-bottom: vwm(20px);
+      margin-bottom: vwm(17px);
     }
 
     .name {
-      font-size: vwm(35px);
-      margin-top: vwm(30px);
+      font-size: vwm(32px);
+      margin-top: vwm(27px);
     }
 
     .seet-at {
-      font-size: vwm(25px);
+      font-size: vwm(22px);
     }
 
     .seat {
-      font-size: vwm(45px);
+      font-size: vwm(43px);
+    }
+
+    .seat-index {
+      font-size: vwm(43px);
     }
 
     .plus-one {
-      font-size: vwm(30px);
+      font-size: vwm(28px);
     }
 
     .time {
-      font-size: vwm(25px);
+      font-size: vwm(23px);
     }
 
     .invite {
-      font-size: vwm(30px);
+      font-size: vwm(28px);
     }
   }
 
   .modal-box,
   .modal-small-box {
-    width: vwm(700px);
-    height: vwm(700px);
+    width: vwm(800px);
+    height: vwm(800px);
 
     .modal-small-box {
       width: vwm(660px);
@@ -227,7 +224,7 @@
 .main {
 
   .jump-rabbit {
-    bottom: vwm(-30px);
+    bottom: vwm(-100px);
     width: vwm(180px);
     height: vwm(180px);
   }

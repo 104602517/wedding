@@ -6,7 +6,7 @@ import Table from '../../assets/Table.jpg'
 
 const Modal:React.FC = () => {
   const store = useContext(StoreContext)
-  const { setIsShowModal, currentPerson, isPicture, setIsPicture } = store
+  const { setIsShowModal, currentPerson, isPicture, setIsPicture, currentTable } = store
   const closeModal = (ev: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
     if(ev.target instanceof Element && ev.target.className === 'modal-layer') {
       setIsShowModal(false)
@@ -33,7 +33,8 @@ const Modal:React.FC = () => {
         <div className="content-box">
           <p className="name">親愛的{currentPerson.name}您好</p>
           <p className="seet-at">您的座位位於</p>
-          <p className="seat" style={{fontFamily: 'fantasy'}}>{currentPerson.table}</p>
+          <p className="seat">{currentPerson.table}</p>
+          <p className="seat-index">桌次: {currentTable.index}</p>
           { !!currentPerson.plusOne && <p className="plus-one">您預計會攜帶 {currentPerson.plusOne} 位貴賓</p> }
           { !currentPerson.plusOne && <p className="plus-one">您<span style={{color: 'red'}}>未</span>有攜帶貴賓</p> }
           { currentPerson.isWedding && <p className="time">將於 15:45 參加證婚</p>}

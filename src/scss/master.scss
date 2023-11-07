@@ -52,41 +52,46 @@ html {
   }
 
   .content-box {
-    font-family: serif;
+    font-family: "Noto Serif TC",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
     z-index: 1005;
     position: fixed;
-    top: 550px;
+    top: 620px;
     left: 50%;
     transform: translate(-50%, -50%);
 
     p {
       text-align: center;
-      margin-bottom: 20px;
+      margin-bottom: 18px;
     }
 
     .name {
-      font-size: 35px;
+      font-size: 32px;
       margin-top: 30px;
     }
 
     .seet-at {
-      font-size: 25px;
+      font-size: 22px;
     }
 
     .seat {
-      font-size: 45px;
+      font-family: fantasy;
+      font-size: 43px;
+    }
+
+    .seat-index {
+      font-size: 43px;
     }
 
     .plus-one {
-      font-size: 30px;
+      font-size: 28px;
     }
 
     .time {
-      font-size: 25px;
+      font-size: 23px;
     }
 
     .invite {
-      font-size: 30px;
+      font-size: 28px;
     }
   }
 
@@ -100,8 +105,9 @@ html {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    transform-origin: center center;
+    transform-origin: 10% center;
     z-index: 1000;
+
   }
 
   // .modal-box,
@@ -240,7 +246,7 @@ html {
     opacity: 1;
     animation: jumpRight 2s linear forwards infinite;
     position: fixed;
-    bottom: -15px;
+    bottom: -205px;
     width: 280px;
     height: 280px;
     transition: opacity 1s;
@@ -437,7 +443,7 @@ html {
   .intro {
     font-size: 16px;
     padding: 25px 0;
-    font-family: serif;
+    font-family: "Noto Serif TC",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
   }
 }
 
@@ -458,6 +464,7 @@ html {
   display: flex;
   flex-direction: column;
   margin-top: 50px;
+  font-family: "Noto Serif TC",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
 
   .link {
     width: 100px;

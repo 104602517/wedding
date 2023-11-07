@@ -7,7 +7,7 @@
   }
 
   .close {
-    top: vw(550px);
+    top: vw(350px);
     right: vw(550px);
     width: vw(50px);
     height: vw(50px);
@@ -18,32 +18,36 @@
     left: 50%;
     transform: translateY(calc(-50% + vw(150px))) translateX(-50%);
     p {
-      margin-bottom: vw(20px);
+      margin-bottom: vw(18px);
     }
 
     .name {
-      font-size: vw(35px);
-      margin-top: vw(30px);
+      font-size: vw(32px);
+      margin-top: vw(27px);
     }
 
     .seet-at {
-      font-size: vw(25px);
+      font-size: vw(22px);
     }
 
     .seat {
-      font-size: vw(45px);
+      font-size: vw(43px);
+    }
+
+    .seat-index {
+      font-size: vw(43px);
     }
 
     .plus-one {
-      font-size: vw(30px);
+      font-size: vw(28px);
     }
 
     .time {
-      font-size: vw(25px);
+      font-size: vw(23px);
     }
 
     .invite {
-      font-size: vw(30px);
+      font-size: vw(28px);
     }
   }
 
@@ -90,7 +94,7 @@
   }
 
   .jump-rabbit {
-    bottom: vw(-15px);
+    bottom: vw(-305px);
     width: vw(280px);
     height: vw(280px);
   }
@@ -159,6 +163,13 @@
   }
 
   .main {
+
+    .jump-rabbit {
+      bottom: vw(-1105px);
+      width: vw(280px);
+      height: vw(280px);
+    }
+
     .name-search-box {
       flex: 0 0 40% !important;
     }

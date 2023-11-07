@@ -3,16 +3,19 @@ import { StoreContext } from '../../context/index'
 
 const NameSearch: React.FC = () => {
 
-  const { setIsShowModal, searchPerson, setCurrentPerson } = useContext(StoreContext)
+  const { setIsShowModal, searchPerson, setCurrentPerson, searchTable, setCurrentTable } = useContext(StoreContext)
   const [name, setName] = useState('')
 
   const onSearch = () => {
     if (!name.length) return
-    const current = searchPerson(name)
-    if (current) {
-      setCurrentPerson(current)
+    const currentPerson = searchPerson(name)
+    const currentTable = searchTable(name)
+    if (currentPerson) {
+      setCurrentPerson(currentPerson)
+      setCurrentTable(currentTable)
     } else {
       setCurrentPerson('')
+      setCurrentTable('')
     }
     setIsShowModal(true)
   }
