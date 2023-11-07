@@ -146,6 +146,10 @@
     height: vwm(160px);
   }
 
+  .big-table {
+    height: 55%;
+  }
+
   .content-box {
     p {
       margin-bottom: vwm(20px);
@@ -221,8 +225,8 @@
     z-index: 10;
     width: vwm(100px);
     height: vwm(100px);
-    transform: translateX(calc(-50% - vwm(10px))) rotate(-10deg);
-    top: vwm(-125px);
+    transform: translateX(calc(-50% - vwm(100px))) rotate(90deg);
+    top: vwm(150px);
     pointer-events: none;
   }
 
@@ -230,14 +234,14 @@
     z-index: 10;
     width: vwm(190px);
     height: vwm(190px);
-    top: vwm(-255px);
-    transform: translateX(calc(-50% - vwm(25px))) rotate(-20deg);
+    top: vwm(105px);
+    transform: translateX(calc(-50% + vwm(45px)));
     pointer-events: none;
   }
 
   .name-search-box {
     top: vwm(10px);
-    flex: 0 0 55% !important;
+    flex: 0 0 50% !important;
 
     .where-i-seet {
       top: vwm(105px);
@@ -321,7 +325,7 @@
   width: vwm(200px);
   height: vwm(200px);
   left: vwm(-80px);
-  bottom: vwm(550px);
+  bottom: vwm(150px);
 }
 
 .where {

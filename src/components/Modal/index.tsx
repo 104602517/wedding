@@ -22,6 +22,7 @@ const Modal:React.FC = () => {
         loop
         play
         animationData={fatRabbit}/>
+      <div className="close"></div>
       {
         isPicture && <img className="big-table" src={Table}/>
       }

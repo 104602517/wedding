@@ -39,8 +39,8 @@
 
   .modal-box,
   .modal-small-box {
-    width: vw(700px);
-    height: vw(700px);
+    width: vw(900px);
+    height: vw(900px);
 
     .modal-small-box {
       width: vw(660px);
@@ -142,6 +142,12 @@
 }
 
 @media (max-width: 1150px) {
+  .modal-layer {
+    .big-table {
+      height: 69%;
+    }
+  }
+
   .main {
     .name-search-box {
       flex: 0 0 40% !important;
