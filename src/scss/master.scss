@@ -466,6 +466,30 @@ html {
   margin-top: 50px;
   font-family: 'Noto Sans TC', sans-serif;
 
+  .guest {
+    margin-bottom: 30px;
+  }
+
+  h2 {
+    font-size: 25px;
+    margin-bottom: 10px;
+    font-weight: 650;
+    color: rgb(167, 126, 131);
+  }
+
+  h3{
+    font-size: 22px;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: rgb(197, 171, 174);
+  }
+
+  p {
+    font-size: 18px;
+    margin-bottom: 8px;
+    color: rgb(74, 67, 67);
+  }
+
   .link {
     width: 100px;
     height: 30px;
