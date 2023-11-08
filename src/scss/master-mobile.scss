@@ -343,34 +343,34 @@
 }
 
 .where {
-  // margin-top: vwm(200px);
+  margin-top: 5vh;
   padding: vwm(20px);
 
   .guest {
-    font-size: vwm(18px);
+    font-size: vwm(20px);
     margin-bottom: vwm(10px);
   }
 
   h2{
     margin-bottom: vwm(5px);
-    font-size: vwm(18px);
+    font-size: vwm(20px);
   }
 
   h3{
-    font-size: vwm(15px);
+    font-size: vwm(18px);
   }
 
   p{
-    font-size: vwm(12px);
+    font-size: vwm(14px);
   }
 
   .link {
-    width: vwm(125px);
-    height: vwm(20px);
+    width: vwm(130px);
+    height: vwm(21px);
     border-radius: vwm(20px);
 
     a {
-      line-height: vwm(20px);
+      line-height: vwm(21px);
     }
   }
 }
