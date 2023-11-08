@@ -14,8 +14,8 @@ const Nav: React.FC = () => {
             <div className="bar-3"></div>
           </div>
           <li className="nav-1"><Link to={'/wedding'}></Link></li>
-          <li className="nav-2"><Link to={'/about-us'}></Link></li>
-          <li className="nav-3"><Link to={'/where'}></Link></li>
+          <li className="nav-2"><Link to={'/wedding/about-us'}></Link></li>
+          <li className="nav-3"><Link to={'/wedding/where'}></Link></li>
         </ul>
       </nav>
     </>

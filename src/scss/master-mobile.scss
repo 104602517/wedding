@@ -239,7 +239,7 @@
     z-index: 10;
     width: vwm(100px);
     height: vwm(100px);
-    transform: translateX(calc(-50% - vwm(100px))) rotate(151deg) rotateX(155deg);
+    transform: translateX(calc(-50% - vwm(100px))) rotate(165deg) rotateX(157deg) rotateZ(-11deg);
     top: vwm(150px);
     pointer-events: none;
   }
@@ -343,26 +343,35 @@
 }
 
 .where {
-  margin-top: 200px;
-  padding: 20px;
+  // margin-top: vwm(200px);
+  padding: vwm(20px);
 
   .guest {
-    font-size: 18;
-    margin-top: 150px;
+    font-size: vwm(18px);
     margin-bottom: vwm(10px);
   }
 
   h2{
     margin-bottom: vwm(5px);
-    font-size: 18px;
+    font-size: vwm(18px);
   }
 
   h3{
-    font-size: 15px;
+    font-size: vwm(15px);
   }
 
   p{
-    font-size: 12px;
+    font-size: vwm(12px);
+  }
+
+  .link {
+    width: vwm(125px);
+    height: vwm(20px);
+    border-radius: vwm(20px);
+
+    a {
+      line-height: vwm(20px);
+    }
   }
 }
 

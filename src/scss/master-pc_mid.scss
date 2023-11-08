@@ -82,13 +82,13 @@
   .pointer {
     width: vw(100px);
     height: vw(100px);
-    transform: translateX(calc(-50% + vw(100px))) rotate(-70deg);
+    transform: translateX(calc(-50% + vw(100px))) rotate(-80deg) rotatey(7deg) rotatex(25deg);
     top: vw(-5px);
   }
 
   .pointer-text {
-    width: vw(190px);
-    height: vw(190px);
+    width: vw(210px);
+    height: vw(210px);
     top: vw(-75px);
     transform: translateX(calc(-50% - vw(25px)));
   }
@@ -153,6 +153,35 @@
 
 .where {
   margin-top: vw(50px);
+
+  .guest {
+    margin-bottom: vw(30px);
+  }
+
+  h2 {
+    font-size: vw(25px);
+    margin-bottom: vw(10px);
+  }
+
+  h3{
+    font-size: vw(22px);
+    margin-bottom: vw(8px);
+  }
+
+  p {
+    font-size: vw(18px);
+    margin-bottom: vw(8px);
+  }
+
+  .link {
+    width: vw(195px);
+    height: vw(30px);
+    border-radius: vw(20px);
+
+    a {
+      line-height: vw(30px);
+    }
+  }
 }
 
 @media (max-width: 1150px) {

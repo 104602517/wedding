@@ -279,7 +279,7 @@ html {
     height: 100px;
     background: url('@/assets/箭頭.svg') no-repeat center center / contain;
     left: 50%;
-    transform: translateX(calc(-50% + 100px)) rotate(-70deg);
+    transform: translateX(calc(-50% + 100px)) rotate(-80deg) rotatey(7deg) rotatex(25deg);
     top: -5px;
     pointer-events: none;
   }
@@ -491,10 +491,10 @@ html {
   }
 
   .link {
-    width: 100px;
+    width: 195px;
     height: 30px;
     border-radius: 20px;
-    background: red;
+    background: rgb(228, 158, 158);
 
     a {
       display: block;
@@ -503,6 +503,7 @@ html {
       line-height: 30px;
       text-decoration: none;
       text-align: center;
+      color: rgb(239, 234, 234);
     }
   }
 }
