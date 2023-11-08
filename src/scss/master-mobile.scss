@@ -343,16 +343,26 @@
 }
 
 .where {
-  margin-top: 200px;
+  margin-top: 240px;
   padding: 20px;
 
   .guest {
     margin-top: 150px;
     margin-bottom: vwm(10px);
+
   }
 
   h2{
-    margin-bottom: vwm(5px)
+    margin-bottom: vwm(5px);
+    font-size: 20px;
+  }
+
+    h3{
+      font-size: 18px;
+    }
+  p{
+    font-size: 15px;
+
   }
 }
 
