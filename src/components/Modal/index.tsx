@@ -54,12 +54,7 @@ const Modal:React.FC = () => {
           <p className="seet-at">請立刻與我們聯絡，抱歉！</p>
         </div>
       }
-      {!isPicture && <div className="modal-box">
-        <div className="modal-small-box">
-          <div className="left-ear"></div>
-          <div className="right-ear"></div>
-        </div>
-      </div>}
+      {!isPicture && <div className="modal-box"></div>}
     </div>
   )
 }

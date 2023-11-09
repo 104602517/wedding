@@ -195,28 +195,13 @@
     }
   }
 
-  .modal-box,
-  .modal-small-box {
+  .modal-box {
     width: vwm(800px);
     height: vwm(800px);
 
     .modal-small-box {
       width: vwm(660px);
       height: vwm(660px);
-
-      .left-ear, .right-ear {
-        width: vwm(60px);
-        height: vwm(70px);
-        top: vwm(35px);
-        left: vwm(75px);
-      }
-
-      .right-ear {
-        width: vwm(50px);
-        height: vwm(60px);
-        top: vwm(30px);
-        right: vwm(40px);
-      }
     }
   }
 }
