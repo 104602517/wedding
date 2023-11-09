@@ -8,7 +8,6 @@ import WhereIndex from './components/Where';
 import Modal from './components/Modal'
 import { StoreContext } from './context/index'
 
-
 interface AppRoute {
   path: string;
   title: string;

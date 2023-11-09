@@ -36,7 +36,7 @@ const Modal:React.FC = () => {
           <p className="seat">{currentPerson.table}</p>
           <p className="seat-index">桌次: {currentTable.index}</p>
           { !!currentPerson.plusOne && <p className="plus-one">您預計會攜帶 {currentPerson.plusOne} 位貴賓</p> }
-          { !currentPerson.plusOne && <p className="plus-one">您<span style={{color: 'red'}}>未</span>有攜帶貴賓</p> }
+          { !currentPerson.plusOne && <p className="plus-one">您<span style={{color: '#cf2222de'}}>未</span>有攜帶貴賓</p> }
           { currentPerson.isWedding && <p className="time">將於 15:45 參加證婚</p>}
           <p className="time">於 17:30 參加晚宴</p>
           <p className="invite">期待您的到來！</p>

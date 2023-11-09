@@ -239,7 +239,7 @@
     z-index: 10;
     width: vwm(100px);
     height: vwm(100px);
-    transform: translateX(calc(-50% - vwm(100px))) rotate(165deg) rotateX(157deg) rotateZ(-11deg);
+    transform: translateX(calc(50% - vwm(100px))) rotate(165deg) rotateX(157deg) rotateZ(-11deg);
     top: vwm(150px);
     pointer-events: none;
   }
@@ -249,7 +249,7 @@
     width: vwm(190px);
     height: vwm(190px);
     top: vwm(105px);
-    transform: translateX(calc(-50% + vwm(45px)));
+    transform: translateX(calc(50% + vwm(45px)));
     pointer-events: none;
   }
 
@@ -343,37 +343,43 @@
 }
 
 .where {
-  margin-top: 5vh;
+  margin-top: -5.5vh;
   padding: vwm(20px);
+  top: 65%;
 
   .guest {
-    font-size: vwm(20px);
+    font-size: vwm(22px);
     margin-bottom: vwm(10px);
+    text-align: center;
   }
 
   h2{
     margin-bottom: vwm(5px);
-    font-size: vwm(20px);
+    font-size: vwm(22px);
   }
 
   h3{
-    font-size: vwm(18px);
+    font-size: vwm(19px);
   }
 
   p{
-    font-size: vwm(14px);
+    font-size: vwm(16.5px);
   }
 
   .link {
-    width: vwm(130px);
-    height: vwm(21px);
+    width: vwm(134px);
+    height: vwm(22px);
     border-radius: vwm(20px);
 
     a {
-      line-height: vwm(21px);
+      line-height: vwm(22px);
     }
   }
 }
+
+// .fade.scroll {
+//   overflow-y: scroll;
+// }
 
 
 @media not all and (min-resolution:.001dpcm){ @supports (-webkit-appearance:none) { 

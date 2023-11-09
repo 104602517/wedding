@@ -31,13 +31,25 @@ const TheBeatles: Table = {
     {
       name: '梁世祁',
       table: 'The Beatles',
-      plusOne: 1,
+      plusOne: 0,
+      isWedding: true,
+    },
+    {
+      name: '李慧如',
+      table: 'The Beatles',
+      plusOne: 0,
       isWedding: true,
     },
     {
       name: '徐植蓉',
       table: 'The Beatles',
-      plusOne: 1,
+      plusOne: 0,
+      isWedding: true,
+    },
+    {
+      name: '王友誠',
+      table: 'The Beatles',
+      plusOne: 0,
       isWedding: true,
     },
     {
@@ -142,12 +154,14 @@ const LambOfGod: Table = {
       table: 'Lamb of God',
       plusOne: 1,
       isWedding: true,
-    },{
+    },
+    {
       name: '周雯',
       table: 'Lamb of God',
       plusOne: 1,
       isWedding: false,
-    },{
+    },
+    {
       name: '張路得',
       table: 'Lamb of God',
       plusOne: 0,
@@ -352,7 +366,7 @@ const Metallica: Table = {
       name: '謝函諭',
       table: 'Metallica',
       plusOne: 1,
-      isWedding: true,
+      isWedding: false,
     },
   ]
 }
@@ -610,10 +624,10 @@ const GunsNRoses: Table = {
       name: '李承恩',
       table: "Guns N' Roses",
       plusOne: 1,
-      isWedding: false,
+      isWedding: true,
     },
     {
-      name: '黃冠勳',
+      name: '鄭友涵',
       table: "Guns N' Roses",
       plusOne: 0,
       isWedding: false,

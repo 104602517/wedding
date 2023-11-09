@@ -40,6 +40,7 @@ html {
     height: 160px;
     animation: rotateAndFly linear 5s infinite alternate;
     transform-origin: center center;
+    display: none;
   }
 
   .big-table {
@@ -58,10 +59,11 @@ html {
     top: 620px;
     left: 50%;
     transform: translate(-50%, -50%);
-
+    
     p {
       text-align: center;
       margin-bottom: 18px;
+      font-family: 'Noto Sans TC Variable', sans-serif;
     }
 
     .name {
@@ -74,7 +76,7 @@ html {
     }
 
     .seat {
-      font-family: fantasy;
+      font-family: serif;
       font-size: 43px;
     }
 
@@ -273,14 +275,36 @@ html {
     position: relative;
   }
 
+  // .pointer {
+  //   position: absolute;
+  //   width: 100px;
+  //   height: 100px;
+  //   background: url('@/assets/箭頭.svg') no-repeat center center / contain;
+  //   left: 50%;
+  //   transform: translateX(calc(-50% + 100px)) rotate(-80deg) rotatey(7deg) rotatex(25deg);
+  //   top: -5px;
+  //   pointer-events: none;
+  // }
+
+  // .pointer-text {
+  //   position: absolute;
+  //   width: 190px;
+  //   height: 190px;
+  //   background: url('@/assets/點擊放大.svg') no-repeat center center / contain;
+  //   top: -75px;
+    // left: 50%;
+    // transform: translateX(calc(-50% - 25px));
+  //   pointer-events: none;
+  // }
+
   .pointer {
     position: absolute;
     width: 100px;
     height: 100px;
     background: url('@/assets/箭頭.svg') no-repeat center center / contain;
-    left: 50%;
-    transform: translateX(calc(-50% + 100px)) rotate(-80deg) rotatey(7deg) rotatex(25deg);
-    top: -5px;
+    right: 50%;
+    top: 50%;
+    transform: translateX(calc(50% + 225px)) translateY(calc(-50%));
     pointer-events: none;
   }
 
@@ -289,9 +313,10 @@ html {
     width: 190px;
     height: 190px;
     background: url('@/assets/點擊放大.svg') no-repeat center center / contain;
-    top: -75px;
-    left: 50%;
-    transform: translateX(calc(-50% - 25px));
+    right: 50%;
+    top: 50%;
+    transform: translateX(calc(50% + 250px)) translateY(calc(-50% - 100px));
+    z-index: 2;
     pointer-events: none;
   }
 
