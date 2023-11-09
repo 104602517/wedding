@@ -767,6 +767,12 @@ const MrBig: Table = {
       plusOne: 0,
       isWedding: false,
     },
+    {
+      name: '江育慈',
+      table: 'Mr. Big',
+      plusOne: 0,
+      isWedding: false,
+    },
   ]
 }
 
