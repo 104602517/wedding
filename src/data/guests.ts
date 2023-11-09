@@ -474,7 +474,7 @@ const BonJovi: Table = {
       isWedding: false,
     },
     {
-      name: '林沛君',
+      name: '林沛均',
       table: 'Bon Jovi',
       plusOne: 0,
       isWedding: false,
@@ -801,7 +801,7 @@ const Oasis: Table = {
     {
       name: '黃揚清',
       table: 'Oasis',
-      plusOne: 0,
+      plusOne: 1,
       isWedding: false,
     },
     {
