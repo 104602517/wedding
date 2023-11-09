@@ -49,7 +49,7 @@ const Modal:React.FC = () => {
         <div className="content-box">
           <p className="seet-at">親愛的貴賓您好</p>
           <p className="seet-at">看來工作兔打錯了您的姓名</p>
-          <p className="seet-at">或著遺漏登記了！</p>
+          <p className="seet-at">或者遺漏登記了！</p>
           <p className="seet-at">若您看到此訊息</p>
           <p className="seet-at">請立刻與我們聯絡，抱歉！</p>
         </div>

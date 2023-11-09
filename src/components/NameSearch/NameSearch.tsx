@@ -8,6 +8,10 @@ const NameSearch: React.FC = () => {
 
   const onSearch = () => {
     if (!name.length) return
+    if (name === '黃皓正' || name === '梁若珩') {
+      alert('喂～ 請不要冒用新郎/新娘的身份啊！')
+      return
+    }
     const currentPerson = searchPerson(name)
     const currentTable = searchTable(name)
     if (currentPerson) {
