@@ -299,7 +299,7 @@ const KISS: Table = {
     {
       name: '陳尚謙',
       table: 'KISS',
-      plusOne: 1,
+      plusOne: 0,
       isWedding: false,
     },
     {
@@ -935,6 +935,12 @@ const Radiohead: Table = {
     },
     {
       name: '張晉',
+      table: 'Radiohead',
+      plusOne: 0,
+      isWedding: false,
+    },
+    {
+      name: '郭晉誠',
       table: 'Radiohead',
       plusOne: 0,
       isWedding: false,
