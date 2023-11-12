@@ -2,6 +2,7 @@ import Nav from './components/Nav'
 import { Route, useLocation } from 'react-router-dom'
 import NameSearchIndex from './components/NameSearch'
 import AboutUsIndex from './components/AboutUs'
+import ZoeLookLook from './components/ZoeLookLook'
 import { CSSTransition } from "react-transition-group";
 import { useCallback, useRef, useContext, useEffect } from 'react';
 import WhereIndex from './components/Where';
@@ -35,13 +36,15 @@ function App() {
   const appRoutes: AppRoute[] = [
     { path: "/wedding", title: "我坐哪裡?", Component: NameSearchIndex },
     { path: "/about-us", title: "我們是誰?", Component: AboutUsIndex },
-    { path: "/where", title: "這是哪裡?", Component: WhereIndex }
+    { path: "/where", title: "這是哪裡?", Component: WhereIndex },
+    { path: "/look", title: "若珩偷看", Component: ZoeLookLook },
   ];
   const isMatch = useCallback(
     (path: string): boolean => {
       if (location.pathname === '/wedding/') location.pathname = '/wedding'
       if (location.pathname === '/wedding/about-us') location.pathname = '/about-us'
       if (location.pathname === '/wedding/where') location.pathname = '/where'
+      if (location.pathname === '/wedding/look') location.pathname = '/look'
       return location.pathname === path ? true : false;
     },
     [location]

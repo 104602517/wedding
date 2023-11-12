@@ -99,14 +99,8 @@ const Steelheart: Table = {
     {
       name: '黃詩璇',
       table: 'Steelheart',
-      plusOne: 0,
+      plusOne: 1,
       isWedding: false,
-    },
-    {
-      name: '黃郁葳',
-      table: 'Steelheart',
-      plusOne: 0,
-      isWedding: true,
     },
     {
       name: '黃子綺',
@@ -326,12 +320,12 @@ const Metallica: Table = {
       plusOne: 0,
       isWedding: false,
     },
-    {
-      name: '張智翔',
-      table: 'Metallica',
-      plusOne: 0,
-      isWedding: false,
-    },
+    // {
+    //   name: '張智翔',
+    //   table: 'Metallica',
+    //   plusOne: 0,
+    //   isWedding: false,
+    // },
     {
       name: '陳青毅',
       table: 'Metallica',
@@ -345,7 +339,7 @@ const Metallica: Table = {
       isWedding: false,
     },
     {
-      name: '陳伯宣',
+      name: '陳伯瑄',
       table: 'Metallica',
       plusOne: 0,
       isWedding: false,
@@ -437,9 +431,9 @@ const DreamTheater: Table = {
       isWedding: false,
     },
     {
-      name: '索如旋',
+      name: '索如璇',
       table: 'Dream theater',
-      plusOne: 0,
+      plusOne: 1,
       isWedding: false,
     },
   ]
@@ -456,7 +450,7 @@ const BonJovi: Table = {
       isWedding: false,
     },
     {
-      name: '黃靖姍',
+      name: '黃靖珊',
       table: 'Bon Jovi',
       plusOne: 0,
       isWedding: false,
@@ -561,7 +555,13 @@ const Muse: Table = {
     {
       name: '劉維仁',
       table: 'Muse',
-      plusOne: 1,
+      plusOne: 0,
+      isWedding: false,
+    },
+    {
+      name: '黃文祥',
+      table: 'Muse',
+      plusOne: 0,
       isWedding: false,
     },
   ]
@@ -594,6 +594,42 @@ const RHCP: Table = {
       table: 'RHCP',
       plusOne: 0,
       isWedding: false,
+    },
+    {
+      name: '蔡侑恬',
+      table: 'RHCP',
+      plusOne: 0,
+      isWedding: false,
+    },
+    {
+      name: '碧鄉',
+      table: 'RHCP',
+      plusOne: 0,
+      isWedding: false,
+    },
+    {
+      name: '何君豪',
+      table: 'RHCP',
+      plusOne: 0,
+      isWedding: false,
+    },
+    {
+      name: '鄭若芃',
+      table: 'RHCP',
+      plusOne: 0,
+      isWedding: false,
+    },
+    {
+      name: '陳秀鳳',
+      table: 'RHCP',
+      plusOne: 0,
+      isWedding: false,
+    },
+    {
+      name: '郭子寧',
+      table: 'RHCP',
+      plusOne: 0,
+      isWedding: true,
     },
   ]
 }
@@ -685,7 +721,7 @@ const TheRollingStones: Table = {
     {
       name: '溫振華',
       table: 'The Rolling stones',
-      plusOne: 1,
+      plusOne: 2,
       isWedding: true,
     },
     {
@@ -743,12 +779,12 @@ const MrBig: Table = {
       plusOne: 0,
       isWedding: false,
     },
-    {
-      name: '林薏珊',
-      table: 'Mr. Big',
-      plusOne: 0,
-      isWedding: false,
-    },
+    // {
+    //   name: '林薏珊',
+    //   table: 'Mr. Big',
+    //   plusOne: 0,
+    //   isWedding: false,
+    // },
     {
       name: '王重真',
       table: 'Mr. Big',
@@ -761,12 +797,12 @@ const MrBig: Table = {
       plusOne: 0,
       isWedding: false,
     },
-    {
-      name: '張心念',
-      table: 'Mr. Big',
-      plusOne: 0,
-      isWedding: false,
-    },
+    // {
+    //   name: '張心念',
+    //   table: 'Mr. Big',
+    //   plusOne: 0,
+    //   isWedding: false,
+    // },
     {
       name: '江育慈',
       table: 'Mr. Big',
@@ -848,7 +884,7 @@ const Nirvana: Table = {
       isWedding: false,
     },
     {
-      name: '連德邵',
+      name: '連德劭',
       table: 'Nirvana',
       plusOne: 1,
       isWedding: false,
@@ -879,6 +915,12 @@ const LedZeppelin: Table = {
       isWedding: true,
     },
     {
+      name:'邵玉貴',
+      table: 'Led Zeppelin',
+      plusOne: 0,
+      isWedding: false,
+    },
+    {
       name: '溫淑蕙',
       table: 'Led Zeppelin',
       plusOne: 0,
@@ -897,28 +939,16 @@ const LedZeppelin: Table = {
       isWedding: true,
     },
     {
-      name: '蔡侑恬',
-      table: 'Led Zeppelin',
-      plusOne: 0,
-      isWedding: false,
-    },
-    {
-      name: '郭子寧',
-      table: 'Led Zeppelin',
-      plusOne: 0,
-      isWedding: true,
-    },
-    {
-      name: '碧鄉',
-      table: 'Led Zeppelin',
-      plusOne: 0,
-      isWedding: false,
-    },
-    {
       name: '蘇翊銘',
       table: 'Led Zeppelin',
       plusOne: 0,
       isWedding: false,
+    },
+    {
+      name: '黃郁葳',
+      table: 'Led Zeppelin',
+      plusOne: 0,
+      isWedding: true,
     },
   ]
 }
@@ -981,6 +1011,12 @@ const Radiohead: Table = {
       plusOne: 0,
       isWedding: false,
     },
+    {
+      name: '凌子璿',
+      table: 'Radiohead',
+      plusOne: 0,
+      isWedding: false,
+    },
   ]
 }
 export default [
@@ -1005,6 +1041,5 @@ export default [
   Nirvana,
   LedZeppelin,
   Radiohead,
-
 ]
 
