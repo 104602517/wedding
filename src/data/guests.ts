@@ -553,7 +553,7 @@ const Muse: Table = {
       isWedding: false,
     },
     {
-      name: '羅君翰',
+      name: '羅君瀚',
       table: 'Muse',
       plusOne: 0,
       isWedding: false,
