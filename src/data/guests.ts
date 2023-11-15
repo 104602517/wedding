@@ -421,19 +421,19 @@ const DreamTheater: Table = {
     {
       name: '薛朝輝',
       table: 'Dream theater',
-      plusOne: 1,
-      isWedding: false,
-    },
-    {
-      name: '盧浩熙',
-      table: 'Dream theater',
-      plusOne: 1,
+      plusOne: 2,
       isWedding: false,
     },
     {
       name: '索如璇',
       table: 'Dream theater',
       plusOne: 1,
+      isWedding: false,
+    },
+    {
+      name: '賴煦陽',
+      table: 'Dream theater',
+      plusOne: 0,
       isWedding: false,
     },
   ]
@@ -486,15 +486,9 @@ const BonJovi: Table = {
       isWedding: false,
     },
     {
-      name: '賴煦陽',
+      name: '黃文雄',
       table: 'Bon Jovi',
-      plusOne: 0,
-      isWedding: false,
-    },
-    {
-      name: '龔應豐',
-      table: 'Bon Jovi',
-      plusOne: 0,
+      plusOne: 1,
       isWedding: false,
     },
    
@@ -947,7 +941,7 @@ const LedZeppelin: Table = {
     {
       name: '黃郁葳',
       table: 'Led Zeppelin',
-      plusOne: 0,
+      plusOne: 1,
       isWedding: true,
     },
   ]
