@@ -803,6 +803,12 @@ const MrBig: Table = {
       plusOne: 0,
       isWedding: false,
     },
+    {
+      name: '徐鍾淇',
+      table: 'Mr. Big',
+      plusOne: 0,
+      isWedding: false,
+    },
   ]
 }
 
@@ -1014,7 +1020,6 @@ const Radiohead: Table = {
   ]
 }
 export default [
-  MrBig,
   Steelheart,
   TheRollingStones,
   TheBeatles,
